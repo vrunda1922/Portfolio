@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="jQuery/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <script src="js/ScrollFx.js-master/dist/ScrollFx.js"></script>
+</head>
+<style>
+    * {
+        scroll-behavior: smooth;
+        background-attachment: fixed;
+    }
+    
+    h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .jumbotron {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(248, 248, 248, 1) 50%, rgba(0, 153, 255, 1) 50%, rgba(0, 151, 255, 1) 100%);
+    }
+    
+    .avatar {
+        margin-bottom: -95px;
+    }
+    
+    .big {
+        font-size: 198px !important;
+        font-family: fantasy;
+        font-family: 'Luckiest Guy', cursive;
+    }
+    
+    .summary {
+        font-size: 23px;
+    }
+    
+    footer {
+        font-size: 18px;
+    }
+    
+    .icon {
+        border: 2px solid rgba(130, 188, 245, 0.479);
+    }
+    
+    .icon:hover {
+        background-color: whitesmoke;
+        color: dodgerblue;
+        border: 2px solid whitesmoke;
+    }
+    
+    .animate__slideInRight {
+        animation: nav-load 300ms ease-in;
+    }
+    
+    .animate__slideInLeft {
+        animation: nav-load1 300ms ease-in;
+    }
+    
+    @keyframes nav-load {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+    @keyframes nav-load1 {
+        0% {
+            transform: translateX(200%);
+        }
+        100% {
+            transform: translateX(100);
+        }
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .col-md-6 {
+            width: 50%;
+        }
+        .summary {
+            font-size: 18px;
+        }
+        footer {
+            font-size: 14px;
+        }
+        .display-1 {
+            font-size: 60px !important;
+        }
+        .display-2 {
+            font-size: 50px !important;
+        }
+        .display-3,
+        h1 {
+            font-size: 30px !important;
+        }
+        .big {
+            margin-top: 220px;
+            font-size: 110px !important;
+        }
+        .icon {
+            padding: 9px !important;
+        }
+        .m-5 {
+            margin: 3rem 1rem !important;
+        }
+        .ml-5 {
+            margin-left: 1.5rem !important;
+        }
+        .mypic {
+            margin: 42px !important;
+        }
+    }
+</style>
+
+<body>
+    <script>
+        document.body.classList.add('fade');
+    </script>
+
+    <header>
+        <ul class="nav nav-pills fixed-top bg-light">
+            <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Portfolio">Portfolio</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#Connect">Connect</a>
+            </li> -->
+        </ul>
+        <div class="jumbotron bg-dark text-light text-center shadow" id="home">
+            <h1 class="display-1">
+                <section class="row">
+                    <div class="col-md-6 animate_animated animate__slideInRight text-primary text-right p-2">
+                        <h1 class="display-1 big text-dark">H <br> LL
+                        </h1>
+                    </div>
+                    <div class="col-md-6 text-left p-2 animate__slideInLeft">
+                        <h1 class="display-1 big text-dark">E<br> O.</h1>
+                    </div>
+                </section>
+            </h1>
+            <!-- <p></p> -->
+            <img src="img/avatar.jpg" height="200px" width="200px" class="rounded-circle avatar" alt="">
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <section id="About" class="row scroll-fx-stagger-container" data-stagger=".02" data-offset="0.1">
+                <div class="col-md-12 p-3 shadow m-5  scroll-fx " data-translate-y="100 " data-opacity="0 ">
+                    <section class="row p-3">
+                        <div class="col-md-3">
+                            <img src="img/IMG-20191016-WA0127.jpg" height="200px" width="200px" class="rounded-circle shadow-lg mt-4 mypic" alt="">
+                        </div>
+                        <div class="col-md-9 p-3">
+                            <h1 class="display-3">I'm Vrunda Patel</h1>
+                            <p class="summary"> An Enthusiastic web developer aspiring to explore more. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.I design and code beautifully simple things, and i
+                                love what i do.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div id="Portfolio" class="col-md-12 text-center p-3">
+                    <h1 class="display-1">Portfolio</h1>
+                    <p>Here are some of my projects..</p>
+                    <section class="rounded row text-center scroll-fx-stagger-container" data-stagger=".02" data-offset="0.1">
+                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow   scroll-fx " data-translate-y="100 " data-opacity="0 "><img src="img/p1.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 shadow   scroll-fx " data-translate-y="100 " data-opacity="0 "><img src="img/p2.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/p3.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/p4.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/p5.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/p6.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/p7.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/p8.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/p9.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/11.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/12.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/13.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/14.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/p10.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/15.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/16.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/17.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/18.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                    </section>
+                </div>
+                <!-- <div id="Connect" class="col-md-12">
+                    <h1 class="display-1">Connect</h1>
+                    <section class="row">
+                        <div class="col-md-6 text-right">
+                            <i class="fas fa-phone-alt"></i>
+                            <i class="far fa-envelope"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="col-md-6 text-left">
+                            <p>6355480421</p>
+                            <p>vrundapatel816@gmail.com</p>
+                            <p></p>
+                        </div>
+                    </section> -->
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="bg-primary text-center text-light p-3 mt-3">
+        <h1 class="m-5">Living, learning, & leveling up <br> one day at a time.</h1>
+        <a class="text-white" href="https://www.hackerearth.com/@sara133">
+            <i class="m-3 icon p-3 rounded-circle fab fa-hackerrank"></i>
+        </a>
+        <a class="text-white" href="vrundapatel816@gmail.com">
+            <i class="m-3 icon p-3 rounded-circle far fa-envelope"></i>
+        </a>
+        <a class="text-white" href="https://www.linkedin.com/in/vrunda-patel-39833b192/">
+            <i class="m-3 icon p-3 rounded-circle fab fa-linkedin"></i>
+        </a>
+        <a class="text-white" href="https://github.com/vrunda1922">
+            <i class="m-3 icon p-3 rounded-circle fab fa-github"></i>
+        </a>
+        <br>
+        <p class="text-white">HandCrafted By me</p>
+        <p class="text-white"><i class="far fa-copyright"></i> Twenty Twenty</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(e) {
+            document.body.classList.remove('fade');
+        });
+    </script>
+
+</body>
+<script>
+    $(document).ready(function() {
+        $('.nav-item').click(function() {
+            $('.nav-link').removeClass('active');
+            $(this).children().addClass('active');
+        });
+    })
+</script>
+<script>
+    window.addEventListener('load', function() {
+        var instance = new ScrollFx();
+    })
+
+
+
+    var instance = new ScrollFx({
+        offset: .2,
+        distance: .3,
+        translateX: 0,
+        translateY: 0,
+        translateZ: 0,
+        translateUnit: 'px',
+        skewX: 0,
+        skewY: 0,
+        scale: 1,
+        rotate: 0,
+        opacity: 1,
+        blur: 0,
+        easing: 'ease-out',
+    });
+</script>
+
+</html>
