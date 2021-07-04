@@ -41,6 +41,35 @@
         font-family: 'Luckiest Guy', cursive;
     }
     
+    .portfolio-img {
+        /* z-index: 1000; */
+    }
+    
+    .overlay {
+        width: inherit;
+        background-color: #23232388;
+        color: aliceblue;
+        opacity: 0;
+        border-radius: 500px;
+        /* z-index: -1; */
+        transition: 0.4s ease-in-out;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: -webkit-fill-available;
+    }
+    
+    .overlay:hover {
+        opacity: 1;
+        border-radius: 0px;
+    }
+    
+    .portfolio-img:hover+.overlay {
+        opacity: 1;
+        z-index: 200;
+        border-radius: 0px;
+    }
+    
     .summary {
         font-size: 23px;
     }
@@ -170,38 +199,213 @@
                 <div class="col-md-12 p-3 shadow m-5  scroll-fx " data-translate-y="100 " data-opacity="0 ">
                     <section class="row p-3">
                         <div class="col-md-3">
-                            <img src="img/IMG-20191016-WA0127.jpg" height="200px" width="200px" class="rounded-circle shadow-lg mt-4 mypic" alt="">
+                            <img src="img/My_Image.jpeg" height="200px" width="200px" class="rounded-circle shadow-lg mt-4 mypic" alt="">
                         </div>
                         <div class="col-md-9 p-3">
                             <h1 class="display-3">I'm Vrunda Patel</h1>
-                            <p class="summary"> An Enthusiastic web developer aspiring to explore more. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.I design and code beautifully simple things, and i
-                                love what i do.
+                            <p class="summary"> An Enthusiastic Full - Stack developer aspiring to explore more. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.I design and code beautifully simple things,
+                                and I love what I do.
                             </p>
                         </div>
                     </section>
                 </div>
+                <!-- <div id="skills" class="col-md-12 text-center p-3">
+                    <h1 class="display-1">Skills</h1>
+                    <h3></h3>
+                    <section class="rounded row text-center scroll-fx-stagger-container" data-stagger=".02" data-offset="0.1">
+                        <h3 class="btn btn-success m-3">HTML</h3>
+                        <h3 class="btn btn-success m-3">CSS</h3>
+                        <h3 class="btn btn-success m-3">Javascript</h3>
+                        <h3 class="btn btn-secondary m-3">JQuery</h3>
+                        <h3 class="btn btn-secondary m-3">PHP</h3>
+                        <h3 class="btn btn-secondary m-3">CodeIgniter</h3>
+                        <h3 class="btn btn-secondary m-3">C</h3>
+                        <h3 class="btn btn-secondary m-3">CPP</h3>
+                    </section>
+                </div> -->
+
                 <div id="Portfolio" class="col-md-12 text-center p-3">
                     <h1 class="display-1">Portfolio</h1>
-                    <p>Here are some of my projects..</p>
+                    <h3>Insights to my work</h3>
                     <section class="rounded row text-center scroll-fx-stagger-container" data-stagger=".02" data-offset="0.1">
-                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow   scroll-fx " data-translate-y="100 " data-opacity="0 "><img src="img/p1.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 shadow   scroll-fx " data-translate-y="100 " data-opacity="0 "><img src="img/p2.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/p3.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/p4.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/p5.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/p6.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/p7.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/p8.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/p9.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/11.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/12.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/13.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/14.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/p10.png" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/15.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/16.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/17.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
-                        <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/18.jpeg" width="100%" height="250px" class="rounded shadow-lg" alt=""></div>
+                        <div class=" rounded col-md-5 p-0 m-4 ml-5 shadow   scroll-fx " data-translate-y="100 " data-opacity="0 "><img src="img/p1.png" width="100%" height="350px" class="rounded shadow-lg portfolio-img" alt="">
+                            <div class="overlay p-5">
+                                <h1>Flipr Website</h1>
+                                <p>A Frontend website made during Flipr Hackathon . Designed the Flipr Company website portraying the details and services of the company . <br><br><br>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                    <span class="badge badge-primary">JQuery</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-img rounded col-md-5 p-0 m-4 shadow   scroll-fx " data-translate-y="100 " data-opacity="0 "><img src="img/p2.png" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay p-5">
+                                <h1>Basketball Championship</h1>
+                                <p>Designed a website showing off the prestige of tournament with a facility of registration and schedule of the series <br><br><br>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                    <span class="badge badge-primary">Bootstrap</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-img rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/p3.png" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay p-5">
+                                <h1>Wizard</h1>
+                                <p>Designed the website for form filling in steps called wizard <br><br><br>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                    <span class="badge badge-primary">JQuery</span>
+                                    <span class="badge badge-primary">Bootstrap</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-img rounded col-md-5 p-0 m-4 shadow"><img src="img/p4.png" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay p-5">
+                                <h1>Tic-Tac-Toe</h1>
+                                <p>A simple game involving two players with beautiful animations and clear rules <br><br><br>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                    <span class="badge badge-primary">JQuery</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-img rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/p5.png" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay p-5">
+                                <h1>Website design</h1>
+                                <p>Small pretty UI for a website <br><br><br>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <div class="rounded col-md-5 p-0 m-4 shadow"><img src="img/p6.png" width="100%" height="350px" class="rounded shadow-lg" alt=""></div> -->
+                        <!-- <div class="portfolio-img rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/p7.png" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay">text</div>
+                        </div>
+                        <div class="portfolio-img rounded col-md-5 p-0 m-4 shadow"><img src="img/p8.png" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay">text</div>
+                        </div> -->
+                        <div class="portfolio-img rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/p9.png" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay p-5">
+                                <h1>Student Records</h1>
+                                <p>Website portraying the description of marks and performance with beautiful animations <br><br><br>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                    <span class="badge badge-primary">JQuery</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-img rounded col-md-5 p-0 m-4 shadow"><img src="img/11.jpeg" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay p-5">
+                                <h1>Food ordering and Table Booking</h1>
+                                <p>A full stack website with facilities involving ordering food as well as table booking for both Customers and Retailers <br><br>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                    <span class="badge badge-primary">JQuery</span><br>
+                                    <span class="badge badge-primary">PHP</span>
+                                    <span class="badge badge-primary">Mysql</span>
+                                    <span class="badge badge-primary">Bootstrap</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-img rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/12.jpeg" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay p-5">
+                                <h1>Messaging Web App</h1>
+                                <p>Web application for adding friends and chatting facilities <br><br><br>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                    <span class="badge badge-primary">JQuery</span><br>
+                                    <span class="badge badge-primary">PHP</span>
+                                    <span class="badge badge-primary">Mysql</span>
+                                    <span class="badge badge-primary">Bootstrap</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-img rounded col-md-5 p-0 m-4 shadow"><img src="img/13.jpeg" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay p-5">
+                                <h1>Patient Management Web App</h1>
+                                <p>Developed for maintaining Patient records and Medicine records for Doctors <br><br><br>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                    <span class="badge badge-primary">JQuery</span><br>
+                                    <span class="badge badge-primary">PHP</span>
+                                    <span class="badge badge-primary">Mysql</span>
+                                    <span class="badge badge-primary">Bootstrap</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-img rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/14.jpeg" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay p-5">
+                                <h1>Food Online</h1>
+                                <p>Another UI with the same backend for Food Ordering System <br><br><br>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                    <span class="badge badge-primary">JQuery</span><br>
+                                    <span class="badge badge-primary">PHP</span>
+                                    <span class="badge badge-primary">Mysql</span>
+                                    <span class="badge badge-primary">Bootstrap</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-img rounded col-md-5 p-0 m-4 shadow"><img src="img/p10.png" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay p-5">
+                                <h1>To-Do Application</h1>
+                                <p>Simple Design and high maintanence web application <br><br><br>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                    <span class="badge badge-primary">JQuery</span><br>
+                                    <span class="badge badge-primary">Bootstrap</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <div class="portfolio-img rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/15.jpeg" width="100%" height="350px" class="rounded shadow-lg" alt=""></div> -->
+                        <div class="portfolio-img rounded col-md-5 p-0 m-4 shadow"><img src="img/16.jpeg" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay p-5">
+                                <h1>Fun With Maths</h1>
+                                <p>A pleasent and fun maths game for small kids to quickly learn Maths operations <br><br><br>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                    <span class="badge badge-primary">JQuery</span><br>
+                                    <span class="badge badge-primary">Bootstrap</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-img rounded col-md-5 p-0 m-4 ml-5 shadow"><img src="img/17.jpeg" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay p-5">
+                                <h1>Books Shopping UI</h1>
+                                <p>Simple one page UI representing online book store for keen readers <br><br><br>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                    <span class="badge badge-primary">JQuery</span><br>
+                                    <span class="badge badge-primary">Bootstrap</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-img rounded col-md-5 p-0 m-4 shadow"><img src="img/18.jpeg" width="100%" height="350px" class="rounded shadow-lg" alt="">
+                            <div class="overlay p-5">
+                                <h1>Unacademy Clone</h1>
+                                <p>Unacademy Home page UI clone <br><br><br>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                    <span class="badge badge-primary">JQuery</span><br>
+                                    <span class="badge badge-primary">Bootstrap</span>
+                                </p>
+                            </div>
+                        </div>
                     </section>
                 </div>
                 <!-- <div id="Connect" class="col-md-12">
