@@ -40,10 +40,9 @@
         font-family: fantasy;
         font-family: 'Luckiest Guy', cursive;
     }
-    
-    .portfolio-img {
-        /* z-index: 1000; */
-    }
+    /* .portfolio-img { */
+    /* z-index: 1000; */
+    /* } */
     
     .overlay {
         width: inherit;
@@ -52,16 +51,26 @@
         opacity: 0;
         border-radius: 500px;
         /* z-index: -1; */
-        transition: 0.4s ease-in-out;
+        transition: 0.1s ease-in-out;
         position: absolute;
         top: 0px;
         left: 0;
         height: -webkit-fill-available;
     }
     
+    .overlay:nth-child(n) {
+        position: absolute;
+        top: -20px;
+        transition: 0.3s ease-in-out;
+    }
+    
     .overlay:hover {
         opacity: 1;
         border-radius: 0px;
+    }
+    
+    .overlay:hover:nth-child(n) {
+        top: 0px;
     }
     
     .portfolio-img:hover+.overlay {
@@ -174,7 +183,7 @@
                 <a class="nav-link" href="#Portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://sci-tech-buzz.epizy.com/">Blog</a>
+                <a class="nav-link" href="http://scitechbuzz.epizy.com/">Blog</a>
             </li>
             <!-- <li class="nav-item">
                 <a class="nav-link" href="#Connect">Connect</a>
